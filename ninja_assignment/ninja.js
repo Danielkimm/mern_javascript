@@ -24,6 +24,7 @@ export class ninja {
 export class sensei extends ninja {
     constructor(name, speed = 10, strength = 10, health = 200, wisdom = 10) {
         super(name, speed, strength, health, wisdom)
+        this.wisdom = wisdom;
     }
 
     senseiName() {
@@ -39,3 +40,5 @@ export class sensei extends ninja {
 
 
 export default {ninja, sensei};
+
+

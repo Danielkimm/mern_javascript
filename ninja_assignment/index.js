@@ -8,6 +8,6 @@ ninja1.drinkSake();
 ninja1.showStats();
 
 
-const sensei1 = new sensei("Danny");
+const sensei1 = new sensei("Sensei San");
 sensei1.senseiName();
 sensei1.speakWisdom();
