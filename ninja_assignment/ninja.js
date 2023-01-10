@@ -1,8 +1,8 @@
-class ninja {
-    constructor (name) {
-        this.speed = 3;
-        this.strength = 3;
-        this.health = 0;
+export class ninja {
+    constructor (name, speed = 3, strength = 3, health = 0) {
+        this.speed = speed;
+        this.strength = strength;
+        this.health = health;
         this.name = name;
     }
 
@@ -16,8 +16,26 @@ class ninja {
 
     drinkSake() {
         this.health += 10;
-        console.log(`My name is ${this.name}, my strength is ${this.strength}, my speed is ${this.speed}, and my new health is ${this.health}. For more health, drink more sake!`)
+        console.log(`My health is ${this.health}`)
     }
 }
 
-export default ninja;
+
+export class sensei extends ninja {
+    constructor(name, speed = 10, strength = 10, health = 200, wisdom = 10) {
+        super(name, speed, strength, health, wisdom)
+    }
+
+    senseiName() {
+        console.log(`My name is ${this.name}`);
+    }
+
+    speakWisdom() {
+        this.drinkSake();
+        console.log("Work smarter and harder");
+        this.showStats();
+    }
+}
+
+
+export default {ninja, sensei};
