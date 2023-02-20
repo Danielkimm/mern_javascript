@@ -28,7 +28,7 @@
         document.getElementById("button").onclick = () => {
             setBackgroundColorById("paragraph", "blue");
         }
-        document.getElementById("alert").onclick = () =>{
+        document.getElementById("alert").onclick = () => {
             alert(document.getElementById("popup-input").value);
         }
         document.getElementById("hover-this").onmouseover = () => {
@@ -37,17 +37,17 @@
         document.getElementById("hover-this").onmouseout = () => {
             setBackgroundColorById("body", "white");
         }
-        document.getElementById('finalTask').onclick=()=>{
+        document.getElementById('finalTask').onclick=()=> {
             let color = document.getElementById('color').value
             setBackgroundColorById('finalTask', color)
         }
-        const getValueFromId = id =>{
+        const getValueFromId = id => {
             return document.getElementById(id).value;
         }
-        const setBackgroundColorById = (el, color) =>{
+        const setBackgroundColorById = (el, color) => {
             document.getElementById(el).style = "background-color: " + color
         }
-        const mouseOverFunction = el =>{
+        const mouseOverFunction = el => {
             el.style = "background-color: black";
         }
     </script>
